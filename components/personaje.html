@@ -1,0 +1,42 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="personaje">
+
+    <template>
+    <style>
+    :host{
+      display: block;
+    }
+    </style>
+    <h1>componente personaje</h1>
+  </template>
+
+    <script>
+        class Personaje extends Polymer.Element {
+            connectedCallback() {
+                super.connectedCallback();
+                console.log('my-element created!');
+            }
+
+            ready() {
+                super.ready();
+                this.textContent = 'I\'m a custom element!';
+            }
+
+            static get is() {
+                return 'personaje';
+
+
+            }
+            static get properties() {
+                return {
+
+                }
+            }
+
+        }
+
+        window.customElements.define(Personaje.is, Personaje);
+    </script>
+
+</dom-module>

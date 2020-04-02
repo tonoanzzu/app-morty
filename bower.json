@@ -1,0 +1,20 @@
+{
+    "name": "app-morti",
+    "authors": [
+        "Antonio Anzures <joaz@gft.com>"
+    ],
+    "description": "",
+    "main": "",
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "polymer": "2.0.0"
+    }
+}

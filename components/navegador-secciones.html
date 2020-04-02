@@ -1,0 +1,57 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="navegador-secciones">
+
+    <template>
+    <style>
+    nav {
+      background-color: #eef;
+      padding: 10px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+    </style>
+    <nav>
+      <ul>
+          <li>
+            <a href="pagina1.html">
+              Enlace 1
+            </a>
+          </li>
+          <li>
+            <a href="pagina2.html">
+              Enlace 2
+            </a>
+          </li>
+          <li>
+            <a href="pagina3.html">
+              Enlace 3
+            </a>
+          </li>
+        </ul>
+    </nav> 
+  </template>
+
+    <script>
+        class NavegadorSecciones extends Polymer.Element {
+            static get is() {
+                return 'navegador-secciones';
+            }
+            static get properties() {
+                return {
+
+                }
+            }
+        }
+
+        window.customElements.define(NavegadorSecciones.is, NavegadorSecciones);
+    </script>
+
+</dom-module>
